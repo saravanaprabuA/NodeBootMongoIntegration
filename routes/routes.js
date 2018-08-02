@@ -32,7 +32,7 @@ app.get("/restapi", function (req, res) {
 	console.log('Error...');
         return console.dir(error);
     }
-     console.log(JSON.parse(body));
+     console.log(JSON.parse(body.content));
      res.json(JSON.parse(body));
    });
  });	
