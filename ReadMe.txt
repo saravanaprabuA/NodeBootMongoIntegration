@@ -81,7 +81,7 @@ http://localhost:8080/api/todo/5b6248da2f3e09b02742136b
 	"description":"Updated Description"
 }
 =======================================
-Delete: DELETE
+Delete: DELETEhttp://localhost:3000/api/todo
 
 http://localhost:8080/api/todo/5b6248da2f3e09b02742136b
 ====================================
@@ -96,7 +96,7 @@ node app
 
 postmand: crate todo
 
-POST: http://localhost:3000/postrest
+POST: http://localhost:3000/api/todo
 {
 	"title": "Postman Title-3", 
 	"description":"Post Description-3"
@@ -104,6 +104,31 @@ POST: http://localhost:3000/postrest
 
 will create the record in todo table in mongo db
 
+Get all: GET http://localhost:3000/api/todo
+
+Get one: GET http://localhost:3000/api/todo/5b6349bf39d924d6b5f04c16
+
+Update : PUT http://localhost:3000/api/todo/5b6349bf39d924d6b5f04c16
+
+{
+	"title": "Updated New Title", 
+	"description":"Updated Description"
+	
+}
+
+
+Delete: DELETE
+http://localhost:3000/api/todo/5b631e0b39d924d6b5f04c13
+
+"5b631e0b39d924d6b5f04c13 is deleted..."
+==================================================
+
 Git url:https://github.com/saravanaprabuA/NodeBootMongoIntegration.git
+
+================================================
+Adding to json object:
+https://stackoverflow.com/questions/14234646/adding-elements-to-object
+
+
 
 
